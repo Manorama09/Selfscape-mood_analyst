@@ -1,0 +1,54 @@
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-custom{ 
+    background-color: #e3e3e3 ; 
+} 
+
+
+
+.admin{
+    text-align:center;
+    margin-top:50px;
+}
+
+
+
+.card-title{
+    font-size:50px;
+    color: #2E486F;
+}
+
+.card{
+    margin-bottom:30px
+}
+
+.card-subtitle{
+    font-size:30px;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+i{
+    font-size:35px !important;
+    
+}
+
+.bg-white {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+}
+
+
+a{
+    color:#B15269 !important;
+    font-size:20px;
+    font-weight:bolder !important
+}
+
+
