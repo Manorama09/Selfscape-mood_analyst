@@ -196,7 +196,7 @@
                                 localStorage.setItem("token", res.token);
                                 document.getElementById("sub").value = "Signup";
                                 setTimeout(() => {
-                                    window.location.href = "interests.html";
+                                    window.location.href = "today.html";
                                 }, 2500)
                             } else if (res.message == "User with this email already exists"){
                                 document.getElementById("banner").style.backgroundColor = "red";
