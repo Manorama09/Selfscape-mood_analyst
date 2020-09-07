@@ -132,3 +132,93 @@ body{
   padding-top:20px;
   padding-bottom:0px;
 }
+
+#today{
+  background-color: #C6D3DC;
+  width:62.5%;
+  height:87.5%;
+  padding-top:20px;
+  padding-right:100px;
+  padding-left:100px;
+  color:#8A8888;
+}
+
+#text{
+width:95%;
+border:0.7px solid #8A8888;
+padding:10px;
+}
+
+form{
+text-align:left;
+}
+
+button{
+    width:auto;
+    color: #000000;
+    border:0px;
+    padding:10px 55px;
+    border-radius:20px;
+    background-color: #E3BBB9;
+    font-size:100px;
+    font-weight:400;
+    cursor: pointer;
+}
+.slidecontainer {
+  width: 100%; 
+  padding-left:20px;
+}
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 90%; 
+  height: 1.5px;
+  background: #8A8888;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px; 
+  height: 25px;
+  border-radius: 50%;
+  background: #E3BBB9; 
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  background: #E3BBB9;
+  cursor: pointer; 
+}
+#card{
+  background-color:#fff;
+  padding-top:50px;
+  padding-left:90px;
+  padding-right:40px;
+  padding-bottom:20px;
+}
+#textdiv{
+  padding-left:20px;
+  padding-right:30px;
+  padding-top:10px;
+}
+
+#save{
+  padding-left:37%;
+  padding-right:40%;
+  padding-top:5%;
+}
+h5{
+  padding-left:20px;
+}
