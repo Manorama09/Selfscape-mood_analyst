@@ -1,4 +1,48 @@
 
+@keyframes opacityOnAndOff {
+
+    0%{
+        top:-10%;
+    }
+
+    /* 25%{
+        top: 0%;
+        background:red;
+    } */
+
+    50% {
+        top: 0%;
+    }
+
+    75%{
+        top: 0%;
+    }
+
+    100%{
+        top:-10%;       
+    }
+}
+
+#banner {
+    display: none;
+    background: #FC7762;
+    animation-name: opacityOnAndOff;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+}
+
+.error {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    color: #05647A;
+    top: 20%;
+    width:100%;
+    font-weight:bolder
+}
 
 *{
     margin: 0;
