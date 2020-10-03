@@ -11,6 +11,23 @@
     background-color: #e3e3e3 ; 
 } 
 
+input{
+    width:75% !important;
+    padding: 5px 20px;
+    margin-top:50px;
+    color:#2E486F;
+    display:inline-block;
+    font-size:20px;
+    height:55px;
+    text-decoration:none;
+    box-sizing: border-box;
+    cursor:pointer;
+    background: transparent;
+    border: none;
+    border: 1px solid #2E486F ;
+    border-radius: 5px;
+}
+
 
 ::placeholder{
     font-weight: bolder;
@@ -72,7 +89,7 @@ select{
     padding: 5px 20px;
     margin-top:50px;
     margin-bottom:30px;
-    color: #2E486F;
+    color: #040c18;
     display:inline-block;
     font-size:20px;
     height:60px;
