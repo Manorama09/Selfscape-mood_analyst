@@ -36,7 +36,9 @@ body{
     width:330px;
     height:80px;
     background-color: #E3E3E3;
-    padding:10%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:5%;
     margin-left:5%;
     margin-right: 10%;
   }
