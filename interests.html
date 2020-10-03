@@ -140,8 +140,7 @@ window.onload = function () {
                         .then(res => {
                             console.log(res)
                             if (res.message == "Interest added successfully") {
-                                localStorage.setItem("token", res.token);        
-                                localStorage.setItem("token", res.token);
+                                 
                                 document.getElementById("sub").value = "Save";
                                 setTimeout(() => {
                                     window.location.href = "today.html";
