@@ -1,68 +1,75 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today</title>
-    <link rel="stylesheet" href="./styles/analytics.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today</title>
+  <link rel="stylesheet" href="./styles/analytics.css">
+  <link rel="stylesheet" href="./styles/chatbot.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <script>
-    function yellow(event) {
-        event.target.style.borderColor = " #2E486F";
-    }</script>
-<body style="background-color: #E3E3E3; background-image: url('./images/Bg_3.png'); background-size: cover; background-repeat: no-repeat;">
+  function yellow(event) {
+    event.target.style.borderColor = " #2E486F";
+  }</script>
 
-    <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Selfscape</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto ml-5">
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="#">Insights<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item mr-5">
-                    <a class="nav-link" href="#">Logs</a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link" href="#">Selfspace</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid" id="banner" style="position: fixed; z-index: 100;width:100%"></div>
-      <div class="container" id="analytics">
-        <br>
-        <br>
-                <h1 style="font-weight: 300;">View Analytics</h1>
-                <br>
-                <div id="card" style="padding:2px;">
-                  <canvas id="myChart" width="400" height="100"></canvas>
-                </div>
-                <br>
-                <br>
-                    <div id="card" style="padding:2px;">
-                        <div class="graph">
-                            <ul class="months" style="list-style-type:none;">
-                              <li>Jan</li>
-                              <li>Feb</li>
-                              <li>Mar</li>
-                              <li>Apr</li>
-                              <li>May</li>
-                              <li>Jun</li>
-                              <li>Jul</li>
-                              <li>Aug</li>
-                              <li>Sep</li>
-                              <li>Oct</li>
-                              <li>Nov</li>
-                              <li>Dec</li>
-                            </ul>
-                            <!-- <ul class="days" style="list-style-type:none;">
+<body
+  style="background-color: #E3E3E3; background-image: url('./images/Bg_3.png'); background-size: cover; background-repeat: no-repeat;">
+
+  <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Selfscape</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-5">
+        <li class="nav-item mr-5">
+          <a class="nav-link" href="#">Insights<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item mr-5">
+          <a class="nav-link" href="#">Logs</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Selfspace</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid" id="banner" style="position: fixed; z-index: 100;width:100%"></div>
+  <div class="container" id="analytics">
+    <br>
+    <br>
+    <h1 style="font-weight: 300;">View Analytics</h1>
+    <br>
+    <div id="card" style="padding:2px;">
+      <canvas id="myChart" width="400" height="100"></canvas>
+    </div>
+    <br>
+    <br>
+    <div id="card" style="padding:2px;">
+      <div class="graph">
+        <ul class="months" style="list-style-type:none;">
+          <li>Jan</li>
+          <li>Feb</li>
+          <li>Mar</li>
+          <li>Apr</li>
+          <li>May</li>
+          <li>Jun</li>
+          <li>Jul</li>
+          <li>Aug</li>
+          <li>Sep</li>
+          <li>Oct</li>
+          <li>Nov</li>
+          <li>Dec</li>
+        </ul>
+        <!-- <ul class="days" style="list-style-type:none;">
                               <li>Sun</li>
                               <li>Mon</li>
                               <li>Tue</li>
@@ -71,96 +78,106 @@
                               <li>Fri</li>
                               <li>Sat</li>
                             </ul> -->
-                            <ul class="circles" style="list-style-type:none;">
-                              <!-- added via javascript -->
-                              <script>
-                                  
-                              </script>
-                            </ul>
-                          </div>
-                            </div>
-                        </div>
-                        <script>                          
-            window.onload = function getData(e) { 
-                let token = localStorage.getItem("token");
-                fetch("https://selfscape.herokuapp.com/diary/chartData/", {
-                  method: 'GET',
-                  headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `${token}`
-                  },
-                })
-                  .then(res => {
-                    return res.json()
-                  })
-                  .then(res => {
-                    if (res.message === "Found data") {
-                      console.log(res.dataCoordinates);
-                      var ctx = document.getElementById('myChart');
-                                      var myChart = new Chart(ctx, {
-                                          type: 'line',
-                                          data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul','Aug','Sept','Oct','Nov','Dec'],
-                    datasets: [{
-                        label: 'Average Mood Score',
-                        data: res.data,
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)',
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                              options: {
-                                  scales: {
-                                      yAxes: [{
-                                          ticks: {
-                                              beginAtZero: true
-                                          }
-                                      }]
-                                  }
-                              }
-                          });
-                                   const circles = document.querySelector('.circles');
-                                   const level = res.alldata;
-                                    for (var i = 1; i < 365; i++) {
-                                    //const level = Math.floor(Math.random() * 11);  
-                                    circles.insertAdjacentHTML('beforeend', `<li data-level="${level}"></li>`);
-                                    }
+        <ul class="circles" style="list-style-type:none;">
+          <!-- added via javascript -->
+          <script>
 
-        }
+          </script>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="chatBotDiv"></div>
+  <script>
+    window.onload = function getData(e) {
+      let token = localStorage.getItem("token");
+      fetch("https://selfscape.herokuapp.com/diary/chartData/", {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `${token}`
+        },
       })
-      .catch(err => {
-        console.log(err);
-      })
-}
-</script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        .then(res => {
+          return res.json()
+        })
+        .then(res => {
+          if (res.message === "Found data") {
+            console.log(res.dataCoordinates);
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                  label: 'Average Mood Score',
+                  data: res.data,
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero: true
+                    }
+                  }]
+                }
+              }
+            });
+            const circles = document.querySelector('.circles');
+            const level = res.alldata;
+            for (var i = 1; i < 365; i++) {
+              //const level = Math.floor(Math.random() * 11);  
+              circles.insertAdjacentHTML('beforeend', `<li data-level="${level[i]}"></li>`);
+            }
+
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        })
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <script src="chatbot.js"></script>
 </body>
+
 </html>
