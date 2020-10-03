@@ -7,6 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+<script>
+    function yellow(event) {
+        event.target.style.borderColor = " #2E486F";
+    }</script>
 <body style="background-color: #E3E3E3; background-image: url('./images/Bg_3.png'); background-size: cover; background-repeat: no-repeat;">
 
     <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
@@ -66,13 +70,14 @@
                 var logs = document.getElementById("text").value;
                 
                 let status = [];
-
+                console.log(range);
+                console.log(logs);
                 if (logs.length <= 1) {
-                    document.getElementById("logs").style.borderColor = "#FC7762";
-                    document.getElementById("logs").value = "";
-                    document.getElementById("logs").placeholder = "Please enter the diary log";
+                    document.getElementById("text").style.borderColor = "#FC7762";
+                    document.getElementById("text").value = "";
+                    document.getElementById("text").placeholder = "Please enter the diary log";
                     status.push("false")
-                    document.getElementById("logs").classList.add("red");
+                    document.getElementById("text").classList.add("red");
                 } else {
                     status.push("true")
                 }
@@ -99,7 +104,7 @@
                     })
                     .then(res => {
                         console.log(res)
-                        if (res.message == "Log successfully created") {     
+                        if (res.message == "Diary entry added successfully") {     
                             localStorage.setItem("token", res.token);
                             document.getElementById("sub").value = "SAVE";
                             setTimeout(() => {
