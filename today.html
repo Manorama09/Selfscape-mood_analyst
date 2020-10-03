@@ -54,21 +54,20 @@
                             </div>
                         </div>
       <script>
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("output");
-        output.innerHTML = slider.value;
-        slider.oninput = function() {
-        output.innerHTML = this.value;
-
         window.onload = function () {
+            var slider = document.getElementById("myRange");
+                var output = document.getElementById("output");
+                output.innerHTML = slider.value;
+                slider.oninput = function() {
+                output.innerHTML = this.value;
+                }
             document.getElementById("sub").addEventListener("click", function (e) {
-
                 var range = document.getElementById("myRange").value;
                 var logs = document.getElementById("text").value;
                 
                 let status = [];
 
-                if (log.length <= 1) {
+                if (logs.length <= 1) {
                     document.getElementById("logs").style.borderColor = "#FC7762";
                     document.getElementById("logs").value = "";
                     document.getElementById("logs").placeholder = "Please enter the diary log";
@@ -84,9 +83,12 @@
                 else {
                     console.log("Validated")
                     document.getElementById("sub").value = "Loading..."
-                    fetch("https://selfscape.herokuapp.com/diary/", {
-                        method: 'POST',
-                        headers: new Headers({'content-type': 'application/json'}),
+                    let token = (localStorage.getItem("token"));
+                        fetch("https://selfscape.herokuapp.com/diary/", {
+                            method: 'POST',
+                            headers: new Headers({'content-type': 'application/json',
+                            'Authorization': `${token}`
+                          }),
                         body: JSON.stringify({
                             mood: range,
                             diaryBody: logs,                    
@@ -103,13 +105,7 @@
                             setTimeout(() => {
                                 window.location.href = "entries.html";
                             }, 2500)
-                        }  else {
-                            document.getElementById("banner").style.backgroundColor = "red";
-                            document.getElementById("banner").style.display = "block";
-                            document.getElementById("banner").innerHTML = "Unexpected error occurred"
-                            document.getElementById("banner").classList.add("error");
-                            document.getElementById("sub").value = "SAVE"
-                        }
+                        }  
                     })
                     .catch(err => {
                         document.getElementById("banner").style.backgroundColor = "red";
@@ -121,7 +117,6 @@
                 }
             })
             };
-        }
       </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
