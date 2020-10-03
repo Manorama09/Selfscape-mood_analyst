@@ -354,6 +354,7 @@
   text-align: center;
   color: #fff;
   position: relative;
+  border-radius: 15px;
 }
 .sb1:before {
   content: "";
@@ -365,7 +366,7 @@
   border-top: 10px solid #2c2c46;
   border-bottom: 10px solid transparent;
   right: -20px;
-  top: 6px;
+  top: 12px;
 }
 
 .sb2:before {
@@ -378,7 +379,7 @@
   border-top: 10px solid #00bfb6;
   border-bottom: 10px solid transparent;
   left: -19px;
-  top: 6px;
+  top: 12px;
 }
 
 .bot {
