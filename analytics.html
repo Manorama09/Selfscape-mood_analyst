@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Today</title>
     <link rel="stylesheet" href="./styles/analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
@@ -36,7 +37,15 @@
     </nav>
     <div class="container-fluid" id="banner" style="position: fixed; z-index: 100;width:100%"></div>
       <div class="container" id="analytics">
+        <br>
+        <br>
                 <h1 style="font-weight: 300;">View Analytics</h1>
+                <br>
+                <div id="card" style="padding:2px;">
+                  <canvas id="myChart" width="400" height="100"></canvas>
+                </div>
+                <br>
+                <br>
                     <div id="card" style="padding:2px;">
                         <div class="graph">
                             <ul class="months" style="list-style-type:none;">
@@ -75,6 +84,22 @@
                           </div>
                             </div>
                         </div>
+                        <script>
+                          var ctx = document.getElementById('myChart');
+                          var myChart = new Chart(ctx, {
+                              type: 'line',
+                              data: data,
+                              options: {
+                                  scales: {
+                                      yAxes: [{
+                                          ticks: {
+                                              beginAtZero: true
+                                          }
+                                      }]
+                                  }
+                              }
+                          });
+                          </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
