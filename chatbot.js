@@ -30,7 +30,10 @@ chatDiv.innerHTML = `
               </div>
               <div class="Messenger_content">
                 <div class="Messages">
-                  <div class="Messages_list"></div>
+                  <div class="Messages_list">
+                    <div class="box sb1 bot">I'm speech bubble</div>
+                    <div class="box sb2 user">I'm speech bubble</div>
+                  </div>
                 </div>
                 <div class="Input Input-blank">
                   <textarea

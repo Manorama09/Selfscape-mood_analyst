@@ -345,3 +345,50 @@
 #Smallchat .Input_button:hover .Icon path {
   fill: #2c2c46;
 }
+
+.box {
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #2c2c46;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2c2c46;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 6px;
+}
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+.bot {
+  margin-left: auto;
+  margin-right: 15px;
+  background: #2c2c46;
+}
+
+.user {
+  margin-left: 15px;
+  margin-right: auto;
+  background: #00bfb6;
+}
