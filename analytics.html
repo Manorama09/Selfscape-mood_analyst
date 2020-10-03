@@ -42,7 +42,7 @@
                 <h1 style="font-weight: 300;">View Analytics</h1>
                 <br>
                 <div id="card" style="padding:2px;">
-                  <canvas id="myChart" width="400" height="100"></canvas>
+                  <canvas style="color: blue;" id="myChart" width="400" height="100"></canvas>
                 </div>
                 <br>
                 <br>
@@ -84,11 +84,61 @@
                           </div>
                             </div>
                         </div>
-                        <script>
-                          var ctx = document.getElementById('myChart');
-                          var myChart = new Chart(ctx, {
-                              type: 'line',
-                              data: data,
+                        <script>                          
+            window.onload = function getData(e) { 
+                let token = localStorage.getItem("token");
+                fetch("https://selfscape.herokuapp.com/diary/chartData/", {
+                  method: 'GET',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `${token}`
+                  },
+                })
+                  .then(res => {
+                    return res.json()
+                  })
+                  .then(res => {
+                    if (res.message === "Found data") {
+                      console.log(res.dataCoordinates);
+                      var ctx = document.getElementById('myChart');
+                                      var myChart = new Chart(ctx, {
+                                          type: 'line',
+                                          data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul','Aug','Sept','Oct','Nov','Dec'],
+                    datasets: [{
+                        label: 'Average Mood Score',
+                        data: [7,8,2,4,5,3,2,6,7,8,10,8],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
                               options: {
                                   scales: {
                                       yAxes: [{
@@ -99,6 +149,13 @@
                                   }
                               }
                           });
+
+        }
+      })
+      .catch(err => {
+        console.log(err);
+      })
+}
                           </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
