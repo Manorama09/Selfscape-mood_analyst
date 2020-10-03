@@ -30,7 +30,7 @@
             </ul>
         </div>
     </nav>
-
+    <div class="container-fluid" id="banner" style="position: fixed; z-index: 100;width:100%"></div>
       <div class="container" id="today">
                 <h1 style="font-weight: 300;">Aug 06, 2020</h1>
                     <div id="card">
@@ -48,7 +48,7 @@
                                         <textarea id="text" rows="7" cols="90" placeholder="Share in detail here" onfocus="yellow(event)"></textarea>
                                     </div>
                                     <div id="save">
-                                        <button >SAVE</button>
+                                        <button id="sub">SAVE</button>
                                     </div>
                                 </form>
                             </div>
@@ -59,6 +59,68 @@
         output.innerHTML = slider.value;
         slider.oninput = function() {
         output.innerHTML = this.value;
+
+        window.onload = function () {
+            document.getElementById("sub").addEventListener("click", function (e) {
+
+                var range = document.getElementById("myRange").value;
+                var logs = document.getElementById("text").value;
+                
+                let status = [];
+
+                if (log.length <= 1) {
+                    document.getElementById("logs").style.borderColor = "#FC7762";
+                    document.getElementById("logs").value = "";
+                    document.getElementById("logs").placeholder = "Please enter the diary log";
+                    status.push("false")
+                    document.getElementById("logs").classList.add("red");
+                } else {
+                    status.push("true")
+                }
+                if (status.includes("false")) {
+                    console.log("There was some error while validating")
+                    return false;
+                }
+                else {
+                    console.log("Validated")
+                    document.getElementById("sub").value = "Loading..."
+                    fetch("https://selfscape.herokuapp.com/diary/", {
+                        method: 'POST',
+                        headers: new Headers({'content-type': 'application/json'}),
+                        body: JSON.stringify({
+                            mood: range,
+                            diaryBody: logs,                    
+                        }),
+                    })
+                    .then(res => {
+                        return res.json()
+                    })
+                    .then(res => {
+                        console.log(res)
+                        if (res.message == "Log successfully created") {     
+                            localStorage.setItem("token", res.token);
+                            document.getElementById("sub").value = "SAVE";
+                            setTimeout(() => {
+                                window.location.href = "entries.html";
+                            }, 2500)
+                        }  else {
+                            document.getElementById("banner").style.backgroundColor = "red";
+                            document.getElementById("banner").style.display = "block";
+                            document.getElementById("banner").innerHTML = "Unexpected error occurred"
+                            document.getElementById("banner").classList.add("error");
+                            document.getElementById("sub").value = "SAVE"
+                        }
+                    })
+                    .catch(err => {
+                        document.getElementById("banner").style.backgroundColor = "red";
+                        document.getElementById("banner").style.display = "block";
+                        document.getElementById("banner").innerHTML = "There was some error"
+                        document.getElementById("banner").classList.add("error");
+                        document.getElementById("sub").value = "SAVE"
+                    })
+                }
+            })
+            };
         }
       </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
