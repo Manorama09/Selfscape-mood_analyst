@@ -101,3 +101,52 @@
   .circles li[data-level="10"] {
     background-color: #E3BBB9;
   }
+
+  
+
+
+  .bgcolor {
+    background-color: #C5C5C5;
+    color: #10375D;
+  }
+  
+  .bgcolor[data-level="1"] {
+    background-color: #10375D;
+  }
+  
+  .bgcolor[data-level="2"] {
+    background-color: #76ACCF;
+    color: #10375D;
+  }
+  
+  .bgcolor[data-level="3"] {
+    background-color: #617695;
+    color: #10375D;
+  }
+  .bgcolor[data-level="4"] {
+    background-color: #C6D3DC;
+    color: #10375D;
+  }
+  .bgcolor[data-level="5"] {
+    background-color: #A96389;
+    color: #10375D;
+  }
+  .bgcolor[data-level="6"] {
+    background-color: #291170;
+    color:white;
+  }
+  .bgcolor[data-level="7"] {
+    background-color: #7D2C58;
+    color:white;
+  }
+  .bgcolor[data-level="8"] {
+    background-color: #B15269;
+  }
+  .bgcolor[data-level="9"] {
+    background-color: #E08CA0;
+    color: #7D2C58;
+  }
+  .bgcolor[data-level="10"] {
+    background-color: #E3BBB9;
+     color: #7D2C58;
+  }

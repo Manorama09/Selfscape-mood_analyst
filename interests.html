@@ -105,15 +105,7 @@ window.onload = function () {
                     } else {
                         status.push("true")
                     }
-                    if (text.length <= 1) {
-                        document.getElementById("text").style.borderColor = "#FC7762";
-                        document.getElementById("text").value = "";
-                        document.getElementById("text").placeholder = "Please mention something about your interest";
-                        status.push("false")
-                        document.getElementById("text").classList.add("red");
-                    } else {
-                        status.push("true")
-                    }
+                     
                   
                     if (status.includes("false")) {
                         console.log("There was some error while validating")

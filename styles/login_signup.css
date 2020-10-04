@@ -112,7 +112,7 @@ select{
     cursor:pointer;
     background: transparent;
     border: none;
-    border: 1px solid black !important;
+    border-bottom: 1px solid black !important;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,13 +1,25 @@
-body{
-    font-family: 'Open Sans';
-    background-color: #E3E3E3;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+   
 }
-.navbar-brand{
-  padding-left:30px;
+
+.navbar-custom{ 
+  background-color: #e3e3e3 ; 
+} 
+ 
+
+  a{
+    color:#B15269 !important;
+    font-size:20px;
+    
 }
-.navbar-nav > li{
-    margin-left:10px;
-  }
+
+.nav-item :active{
+font-weight:bolder !important;
+}
 
   #instr{
       background-color: #E3BBB9;
@@ -36,6 +48,8 @@ body{
     width:330px;
     height:80px;
     background-color: #E3E3E3;
+    border: 2px solid #B15269;
+    border-radius: 5px;
     padding-left:5%;
     padding-right:5%;
     padding-top:5%;

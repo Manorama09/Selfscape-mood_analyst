@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script>
         function yellow(event) {
             event.target.style.borderColor = " #2E486F";
@@ -46,46 +48,31 @@
 
     <div class="container ">
         <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 card pb-5 pt-5" style="background-color: #FC7762">
+            <div class="col-12 col-md-10 offset-md-1 card pt-5" style="background-color: #FC7762">
                 <h5 class="col-12 col-md-8 offset-md-1 card-title mb-4">View my Interests</h5>
                 <div class="row">
-                    <div class="col-12 col-md-4   card pb-5 " >
+                    <div class="col-12 col-md-4   card  ">
                         <div class="card-body text-center  ">
-    
-    
-                            <div class=" col-12 card-text text-center">
-                                <div class="admin mt-5">
-                                    <h2>Leisure</h2>
-                                    <div id="viewleisureinterestcards"></div>
-                                </div>
-                            </div>
-    
+
+                            <h2 class="mb-3" style="color: #B15269;font-weight: bolder;">Leisure</h2>
+                            <div id="viewleisureinterestcards"></div>
+
                         </div>
                     </div>
-                    <div class="col-12 col-md-4  card pb-5 ">
+                    <div class="col-12 col-md-4  card  ">
                         <div class="card-body text-center  ">
-    
-    
-                            <div class=" col-12 card-text text-center">
-                                <div class="admin mt-5">
-                                    <h2>Productive</h2>
-                                    <div id="viewproductiveinterestcards"></div>
-                                </div>
-                            </div>
-    
+
+                            <h2 class="mb-3" style="color: #B15269;font-weight: bolder;">Productive</h2>
+                            <div id="viewproductiveinterestcards"></div>
+
                         </div>
                     </div>
-                    <div class="col-12 col-md-4   card pb-5 ">
+                    <div class="col-12 col-md-4   card  ">
                         <div class="card-body text-center  ">
-    
-    
-                            <div class=" col-12 card-text text-center">
-                                <div class="admin mt-5">
-                                    <h2>Learning</h2>
-                                    <div id="viewlearninginterestcards"></div>
-                                </div>
-                            </div>
-    
+
+                            <h2 class="mb-3" style="color: #B15269;font-weight: bolder;">Learning</h2>
+                            <div id="viewlearninginterestcards"></div>
+
                         </div>
                     </div>
                 </div>
@@ -109,32 +96,54 @@
 
 <script>
 
-window.onload = function getData(e) { 
-    let token = localStorage.getItem("token");
-    fetch("https://selfscape.herokuapp.com/interest/filter/?category=Leisure", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `${token}`
-      },
-    })
-      .then(res => {
-        return res.json()
-      })
-      .then(res => {
+    const deleteInterest = (event) => {
+        let token = (localStorage.getItem("token"));
+        fetch(`https://selfscape.herokuapp.com/interest/${event.target.getAttribute('data-id')}/`, {
+            method: 'DELETE',
+            headers: new Headers({
+                'Content-type': 'application/json',
+                'Authorization': `${token}`
+            }),
 
-        if (res.message === "Found interests") {
+        })
+            .then(res => {
+                return res.json()
+            })
+            .then(res => {
+                if (res.message === "Interest Deleted") {
+                    event.target.parentNode.parentNode.parentNode.remove();
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }
 
-          console.log(res);
-          let content = "";
-          let serial = 0;
-          res.interest.forEach(ele => {
-            let interestname = ele.interestName;
-            let description = ele.description;
-             
-            serial = serial + 1;
-            content = content + `<div class="card my-2" id="viewleisureinterestcards" style="border-color: #2E486F;">
-            <h5 class="card-header" style="background-color: #E3BBB9; color: #2E486F" > ${interestname}</h5>
+    window.onload = function () {
+        let token = localStorage.getItem("token");
+        fetch("https://selfscape.herokuapp.com/interest/filter/?category=Leisure", {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `${token}`
+            },
+        })
+            .then(res => {
+                return res.json()
+            })
+            .then(res => {
+
+                if (res.message === "Found interests") {
+
+                    let content = "";
+                    let serial = 0;
+                    res.interest.forEach(ele => {
+                        let interestname = ele.interestName;
+                        let description = ele.description;
+
+                        serial = serial + 1;
+                        content = content + `<div class="card my-2" id="viewleisureinterestcards" style="border-color: #2E486F;">
+            <h5 class="card-header" style="background-color: #E3BBB9; color: #2E486F;" ><span class="col-10" style="text-align:left"> ${interestname}</span><span class="col-2 "style="text-align:right"><i style="cursor: pointer" class="ml-5 fa fa-trash" data-id="${ele._id}" onClick="deleteInterest(event)"></i></span></h5></span>
             <div class="card-body">
               <p class="card-text">
                
@@ -142,40 +151,38 @@ window.onload = function getData(e) {
               </p>
             </div>
           </div>`
-          })
+                    })
 
-          document.getElementById('viewleisureinterestcards').innerHTML = content;
+                    document.getElementById('viewleisureinterestcards').innerHTML = content;
 
-        }
-      })
-      .catch(err => {
-        console.log(err);
-      })
-//---------------------------------------------------------------------------------------------------------
-      fetch("https://selfscape.herokuapp.com/interest/filter/?category=Productive", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `${token}`
-      },
-    })
-      .then(res => {
-        return res.json()
-      })
-      .then(res => {
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        //---------------------------------------------------------------------------------------------------------
+        fetch("https://selfscape.herokuapp.com/interest/filter/?category=Productive", {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `${token}`
+            },
+        })
+            .then(res => {
+                return res.json()
+            })
+            .then(res => {
 
-        if (res.message === "Found interests") {
+                if (res.message === "Found interests") {
+                    let content = "";
+                    let serial = 0;
+                    res.interest.forEach(ele => {
+                        let interestname = ele.interestName;
+                        let description = ele.description;
 
-          console.log(res);
-          let content = "";
-          let serial = 0;
-          res.interest.forEach(ele => {
-            let interestname = ele.interestName;
-            let description = ele.description;
-             
-            serial = serial + 1;
-            content = content + `<div class="card my-2" id="viewproductiveinterestcards" style="border-color: #2E486F;">
-            <h5 class="card-header" style="background-color: #E3BBB9; color: #2E486F" > ${interestname}</h5>
+                        serial = serial + 1;
+                        content = content + `<div class="card my-2" id="viewproductiveinterestcards" style="border-color: #2E486F;">
+                            <h5 class="card-header" style="background-color: #E3BBB9; color: #2E486F;" ><span class="col-10" style="text-align:left"> ${interestname}</span><span class="col-2 "style="text-align:right"><i style="cursor: pointer" class="ml-5 fa fa-trash" data-id="${ele._id}" onClick="deleteInterest(event)"></i></span></h5></span>
             <div class="card-body">
               <p class="card-text">
                
@@ -183,41 +190,39 @@ window.onload = function getData(e) {
               </p>
             </div>
           </div>`
-          })
+                    })
 
-          document.getElementById('viewproductiveinterestcards').innerHTML = content;
+                    document.getElementById('viewproductiveinterestcards').innerHTML = content;
 
-        }
-      })
-      .catch(err => {
-        console.log(err);
-      })
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
 
-      //---------------------------------------------------------------------------------------------------------
-      fetch("https://selfscape.herokuapp.com/interest/filter/?category=Learning", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `${token}`
-      },
-    })
-      .then(res => {
-        return res.json()
-      })
-      .then(res => {
+        //---------------------------------------------------------------------------------------------------------
+        fetch("https://selfscape.herokuapp.com/interest/filter/?category=Learning", {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `${token}`
+            },
+        })
+            .then(res => {
+                return res.json()
+            })
+            .then(res => {
 
-        if (res.message === "Found interests") {
+                if (res.message === "Found interests") {
+                    let content = "";
+                    let serial = 0;
+                    res.interest.forEach(ele => {
+                        let interestname = ele.interestName;
+                        let description = ele.description;
 
-          console.log(res);
-          let content = "";
-          let serial = 0;
-          res.interest.forEach(ele => {
-            let interestname = ele.interestName;
-            let description = ele.description;
-             
-            serial = serial + 1;
-            content = content + `<div class="card my-2" id="viewlearninginterestcards" style="border-color: #2E486F;">
-            <h5 class="card-header" style="background-color: #E3BBB9; color: #2E486F" > ${interestname}</h5>
+                        serial = serial + 1;
+                        content = content + `<div class="card my-2" id="viewlearninginterestcards" style="border-color: #2E486F;">
+                            <h5 class="card-header" style="background-color: #E3BBB9; color: #2E486F;" ><span class="col-10" style="text-align:left"> ${interestname}</span><span class="col-2 " style="text-align:right"><i id="delete" style="cursor: pointer" class="ml-5 fa fa-trash" data-id="${ele._id}" onClick="deleteInterest(event)"></i></span></h5></span>
             <div class="card-body">
               <p class="card-text">
                
@@ -225,16 +230,19 @@ window.onload = function getData(e) {
               </p>
             </div>
           </div>`
-          })
+                    })
 
-          document.getElementById('viewlearninginterestcards').innerHTML = content;
+                    document.getElementById('viewlearninginterestcards').innerHTML = content;
 
-        }
-      })
-      .catch(err => {
-        console.log(err);
-      })
-  }
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            });
+        //----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    }
 </script>
 
 </html>
