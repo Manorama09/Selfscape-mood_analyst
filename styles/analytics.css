@@ -102,7 +102,11 @@
     background-color: #E3BBB9;
   }
 
-  
+  a{
+    color:#B15269 !important;
+    font-size:20px;
+     
+}
 
 
   .bgcolor {
