@@ -123,6 +123,7 @@
   
   .bgcolor[data-level="1"] {
     background-color: #10375D;
+    color: white;
   }
   
   .bgcolor[data-level="2"] {
