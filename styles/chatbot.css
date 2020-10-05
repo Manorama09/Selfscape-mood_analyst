@@ -16,14 +16,18 @@
   right: 12px;
   z-index: 9;
 }
+#robot{
+  padding-left:2px;
+  padding-top:4px;
+}
 .chat_on {
   position: fixed;
   z-index: 10;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   right: 15px;
   bottom: 20px;
-  background-color: #8a57cf;
+  background-color: #7D2C58;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -299,20 +303,17 @@
   border-top: 1px solid #e6ebea;
 }
 #Smallchat .Input-blank .Input_field {
-  max-height: 20px;
+  max-height: 18px;
 }
 #Smallchat .Input_field {
   width: 100%;
   resize: none;
   border: none;
   outline: none;
-  padding: 0;
-  padding-right: 0px;
-  padding-left: 0px;
   padding-left: 20px;
   padding-right: 75px;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   min-height: 20px !important;
 }
@@ -347,7 +348,7 @@
 }
 
 .box {
-  width: 200px;
+  width: 180px;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 10px;
@@ -362,8 +363,8 @@
   height: 0px;
   position: absolute;
   border-left: 10px solid transparent;
-  border-right: 10px solid #2c2c46;
-  border-top: 10px solid #2c2c46;
+  border-right: 10px solid #E3BBB9;
+  border-top: 10px solid #E3BBB9;
   border-bottom: 10px solid transparent;
   left: -19px;
   top: 12px;
@@ -374,9 +375,9 @@
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 10px solid #00bfb6;
+  border-left: 10px solid #617695;
   border-right: 10px solid transparent;
-  border-top: 10px solid #00bfb6;
+  border-top: 10px solid #617695;
   border-bottom: 10px solid transparent;
   right: -20px;
   top: 12px;
@@ -385,11 +386,18 @@
 .bot {
   margin-left: 15px;
   margin-right: auto;
-  background: #2c2c46;
+  background: #E3BBB9;
+  color:#1d1d1d;
+  text-align: left;
+  padding-left:15px;
+  font-size: 14px;
 }
 
 .user {
   margin-left: auto;
   margin-right: 15px;
-  background: #00bfb6;
+  background: #617695;
+  text-align: left;
+  padding-left:20px;
+  font-size: 14px;
 }
