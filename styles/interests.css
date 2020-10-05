@@ -60,7 +60,7 @@ button:focus {
     font-family: 'Dancing Script';
 }
 textarea{
-    width:100%;
+    width:75% !important;
     padding: 15px 20px;
     margin-top:40px !important;
     color:black;
@@ -105,9 +105,12 @@ select{
 }
 
 @media only screen and (max-width: 768px) {
-    input,select {
-        width:100%;
+    input,select, textarea {
+        width:100% !important;
         font-size: 13px;
+    }
+    #interest{
+        width:100% !important;
     }
 }
 

@@ -43,13 +43,11 @@
     text-align: center;
 }
 
-i{
-    font-size:35px !important;
-    
-}
-
 .bg-white {
     box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
 }
 
+.fa-star{
+    font-size: 25px !important;
+}
 
