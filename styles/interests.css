@@ -56,6 +56,9 @@ button:focus {
     box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
 }
 
+#head{
+    font-family: 'Dancing Script';
+}
 textarea{
     width:100%;
     padding: 15px 20px;

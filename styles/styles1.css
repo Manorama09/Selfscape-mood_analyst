@@ -83,6 +83,9 @@ font-weight:bolder !important;
   }
   
   @media only screen and (max-width: 768px) {
+    #bg{
+      display: none;
+    }
     h3,.h3 {
       font-size: 1.2em !important;
     }
@@ -93,9 +96,6 @@ font-weight:bolder !important;
     #instr {
         width:100%;
         font-size: 13px;
-    }
-    img{
-      display: none;
     }
     #rect{
       width:60%;
@@ -113,7 +113,12 @@ font-weight:bolder !important;
     #rect-1{
       display:none;
     }
-    body { overflow: auto; }
+    body { overflow: auto;
+      background-image: none !important;
+     }
+     #aboutus{
+       margin-left: 0 !important;
+     }
 }
 #aboutus{
   background-color: #E3BBB9;
@@ -260,10 +265,6 @@ textarea{
   padding-right:40%;
   padding-top:5%;
 }
-h5{
-  padding-left:20px;
-}
-
 h6{
   font-family: 'Dancing Script', cursive;
 }
