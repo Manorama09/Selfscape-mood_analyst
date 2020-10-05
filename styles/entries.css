@@ -11,7 +11,15 @@
     background-color: #e3e3e3 ; 
 } 
 
- 
+.nav-link{
+    margin-left:40px;
+  }
+
+ a{
+    color:#3D3D3D !important;
+    font-size:16px;
+    font-weight: 600;
+}
 
 .admin{
     text-align:center;
@@ -42,13 +50,6 @@ i{
 
 .bg-white {
     box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
-}
-
-
-a{
-    color:#B15269 !important;
-    font-size:20px;
-     
 }
 
 

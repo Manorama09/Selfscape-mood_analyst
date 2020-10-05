@@ -138,10 +138,14 @@ select{
     }
 }
 
-a{
-    color:#B15269 !important;
-    font-size:20px;
-     
+.nav-link{
+    margin-left:40px;
+  }
+
+ a{
+    color:#3D3D3D !important;
+    font-size:16px;
+    font-weight: 600;
 }
 
 

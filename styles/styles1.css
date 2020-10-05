@@ -11,10 +11,14 @@
 } 
  
 
-  a{
-    color:#3D3D3D !important;
-    font-size:20px;
-    
+.nav-link{
+  margin-left:40px;
+}
+
+a{
+  color:#3D3D3D !important;
+  font-size:16px;
+  font-weight: 600;
 }
 
 .nav-item :active{
@@ -174,16 +178,16 @@ form{
 text-align:left;
 }
 
-button{
-    width:auto;
-    color: #000000;
-    border:0px;
-    padding:10px 55px;
-    border-radius:20px;
-    background-color: #E3BBB9;
-    font-size:100px;
-    font-weight:400;
-    cursor: pointer;
+.login-button{
+  width:50%;
+  color: #3D3D3D;
+  font-weight:bolder;
+  padding:10px 55px;
+  /* border-radius:20px; */
+  border:0px solid;
+  background-color: #E3BBB9;
+  font-size:24px;
+  cursor: pointer;
 }
 .slidecontainer {
   width: 100%; 
@@ -197,7 +201,7 @@ button{
   height: 1.5px;
   background: #8A8888;
   outline: none;
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
@@ -209,17 +213,17 @@ button{
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; 
   appearance: none;
-  width: 25px; 
-  height: 25px;
+  width: 28px; 
+  height: 28px;
   border-radius: 50%;
-  background: #E3BBB9; 
+  background: #A96389; 
   cursor: pointer; 
 }
 
 .slider::-moz-range-thumb {
   width: 25px; 
   height: 25px; 
-  background: #E3BBB9;
+  background: #A96389;
   cursor: pointer; 
 }
 #card{
@@ -234,7 +238,23 @@ button{
   padding-right:30px;
   padding-top:10px;
 }
-
+textarea{
+  width:100%;
+  padding: 15px 20px;
+  margin-top:40px !important;
+  color:black;
+  display:inline-block;
+  font-size:20px;
+  resize: none !important;
+  border-radius: 5px;
+  height:170px !important;
+  outline: none;
+  text-decoration:none;
+  box-sizing: border-box;
+  cursor:pointer;
+  background: transparent;
+  border: 1px solid #2E486F;
+}
 #save{
   padding-left:37%;
   padding-right:40%;

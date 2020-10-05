@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+.nav-link{
+  margin-left:40px;
+}
 #card{
     background-color:#fff;
   }
@@ -110,9 +113,9 @@
   }
 
   a{
-    color:#B15269 !important;
-    font-size:20px;
-     
+    color:#3D3D3D !important;
+    font-size:16px;
+    font-weight: 600;
 }
 
 
