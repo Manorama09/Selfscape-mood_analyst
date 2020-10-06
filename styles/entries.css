@@ -51,3 +51,11 @@
     font-size: 25px !important;
 }
 
+.fa-star:hover{
+    cursor: pointer;
+}
+
+#view{
+    cursor: pointer;
+}
+
