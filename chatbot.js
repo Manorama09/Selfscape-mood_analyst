@@ -89,6 +89,11 @@ chatDiv.innerHTML = `
 `;
 
 $(document).ready(function () {
+  $(document).on("keypress", function(e){
+    if(e.which == 13){
+      $("#sendicon").click();
+    }
+  });
   $(".chat_on").click(function () {
     $(".Layout").toggle();
     $(".chat_on").hide(300);
