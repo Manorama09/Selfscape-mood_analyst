@@ -80,7 +80,7 @@
   }
   
   .circles li[data-level="1"] {
-    background-color: #10375D;
+    background-color: #C6D3DC;
   }
   
   .circles li[data-level="2"] {
@@ -91,13 +91,13 @@
     background-color: #617695;
   }
   .circles li[data-level="4"] {
-    background-color: #C6D3DC;
+    background-color: #10375D;
   }
   .circles li[data-level="5"] {
-    background-color: #A96389;
+    background-color: #291170;
   }
   .circles li[data-level="6"] {
-    background-color: #291170;
+    background-color: #1b0b14;
   }
   .circles li[data-level="7"] {
     background-color: #7D2C58;
