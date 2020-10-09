@@ -80,7 +80,7 @@
   }
   
   .circles li[data-level="1"] {
-    background-color: #10375D;
+    background-color: #C6D3DC;
   }
   
   .circles li[data-level="2"] {
@@ -91,13 +91,13 @@
     background-color: #617695;
   }
   .circles li[data-level="4"] {
-    background-color: #C6D3DC;
+    background-color: #10375D;
   }
   .circles li[data-level="5"] {
-    background-color: #A96389;
+    background-color: #291170;
   }
   .circles li[data-level="6"] {
-    background-color: #291170;
+    background-color: #1b0b14;
   }
   .circles li[data-level="7"] {
     background-color: #7D2C58;
@@ -125,8 +125,8 @@
   }
   
   .bgcolor[data-level="1"] {
-    background-color: #10375D;
-    color: white;
+    background-color: #C6D3DC;
+    color: #10375D;
   }
   
   .bgcolor[data-level="2"] {
@@ -136,18 +136,18 @@
   
   .bgcolor[data-level="3"] {
     background-color: #617695;
-    color: #10375D;
+    color: #fff;
   }
   .bgcolor[data-level="4"] {
-    background-color: #C6D3DC;
-    color: #10375D;
+    background-color: #10375D;
+    color: #fff;
   }
   .bgcolor[data-level="5"] {
-    background-color: #A96389;
-    color: #10375D;
+    background-color: #291170;
+    color: #fff;
   }
   .bgcolor[data-level="6"] {
-    background-color: #291170;
+    background-color: #1b0b14;
     color:white;
   }
   .bgcolor[data-level="7"] {
@@ -156,6 +156,7 @@
   }
   .bgcolor[data-level="8"] {
     background-color: #B15269;
+    color:#fff;
   }
   .bgcolor[data-level="9"] {
     background-color: #E08CA0;
