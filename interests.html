@@ -11,9 +11,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
 </head>
     <script>
         function yellow(event) {
@@ -66,7 +64,7 @@
                 <div class="col-12 col-md-8 offset-md-2 card   ">
                     <div class="card-body text-center  ">
 
-                        <h6 class="col-12">Add your hobbies/interests under the following categories.</h6>
+                        <h6 class="col-12 pb-3">Add your hobbies/interests under the following categories.</h6>
                         <div class=" col-12 card-text text-center">
 
                             <form>
@@ -89,7 +87,7 @@
                                         placeholder="Share in detail here" onfocus="yellow(event)"></textarea>
                                  
                                  
-                                    <input class="mt-5 login-button" type="button" value="SAVE" id="sub">
+                                    <input class="mt-5 mb-3 login-button" type="button" value="SAVE" id="sub">
                                  
                             </form>
 
@@ -133,6 +131,7 @@
                 status.push("true")
             }
 
+            
 
             if (status.includes("false")) {
                 console.log("There was some error while validating")

@@ -15,6 +15,19 @@
   margin-left:40px;
 }
 
+.login-button{
+  width:auto;
+  color: #3D3D3D;
+  font-weight:bolder;
+  padding:10px 55px;
+  /* border-radius:20px; */
+  border:0px solid;
+  background-color: #E3BBB9;
+  font-size:24px;
+  cursor: pointer;
+  
+}
+
 a{
   color:#3D3D3D !important;
   font-size:16px;
@@ -73,25 +86,48 @@ font-weight:bolder !important;
       padding-top:1.5%;
       padding-bottom:1.5%;
   }
-  
-  h3{
+  @media only screen and (min-width: 992px) {
+  .dot-display{
+    display: none;
+  }
+  .small-number{
+    display: none!important;
+  }
+}
+  .number{
       padding-top:27%;
       padding-bottom:27%;
       padding-left:30%;
       padding-right:30%;
       color:#FFFFFF;
   }
-  
+
+ 
   @media only screen and (max-width: 768px) {
     #bg{
       display: none;
     }
-    h3,.h3 {
+    
+    .small-number{
+      padding-top:27%;
+      padding-bottom:27%;
+      padding-left:30%;
+      padding-right:30%;
+      color:#FFFFFF;
       font-size: 1.2em !important;
-    }
+  }
     
     .selfscape {
-      font-size:70px!important;
+      font-size:60px!important;
+    }
+    .subtitle {
+      font-size:20px!important;
+    }
+    .logo{
+      height: 300px;
+      width: 300px;
+      margin-bottom: 80px;
+      margin-top: 80px;
     }
     #instr {
         width:100%;
@@ -99,16 +135,24 @@ font-weight:bolder !important;
     }
     #rect{
       width:60%;
-      height:50px;
+      height:60px;
       background-color: #E3E3E3;
-      padding:2px;
+      padding:5px;
+      margin:10px;
+    }
+    .dot-display{
+      height: 40px;
+      width: 40px;
+      background-color: #2E486F;
+      border-radius: 50%;
+      display: inline-block;
     }
     .dot {
       height: 40px;
       width: 40px;
       background-color: #2E486F;
       border-radius: 50%;
-      display: inline-block;
+      display: none;
     }
     #rect-1{
       display:none;
@@ -186,17 +230,7 @@ form{
 text-align:left;
 }
 
-.login-button{
-  width:50%;
-  color: #3D3D3D;
-  font-weight:bolder;
-  padding:10px 55px;
-  /* border-radius:20px; */
-  border:0px solid;
-  background-color: #E3BBB9;
-  font-size:24px;
-  cursor: pointer;
-}
+
 .slidecontainer {
   width: 100%; 
   padding-left:20px;
