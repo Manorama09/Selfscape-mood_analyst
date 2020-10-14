@@ -28,8 +28,8 @@ canvas{
 }
 @media only screen and (min-width: 992px) {
 canvas{
-  width:900px!important;
-   height:350px!important;
+  width:100%!important;
+   height:300!important;
 }
 }
 #card{
@@ -37,12 +37,12 @@ canvas{
   }
   #analytics{
     background-color: #C6D3DC;
-    width:62.5%;
-    height:87.5%;
+    width:100%;
+    height:100%;
     color:#161515;
   }
 :root {
-    --circle-size: 12.5px;
+    --circle-size: 14px;
     --circle-gap: 4px;
     --week-width: calc(var(--circle-size) + var(--circle-gap));
   }

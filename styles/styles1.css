@@ -293,7 +293,7 @@ textarea{
   outline: none;
   text-decoration:none;
   box-sizing: border-box;
-  cursor:pointer;
+  
   background: transparent;
   border: 1px solid #2E486F;
 }
