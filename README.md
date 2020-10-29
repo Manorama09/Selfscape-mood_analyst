@@ -4,7 +4,7 @@ A web application that can help you monitor and track your mood by providing you
 
 ## Our Idea
 
-During these trying times, often it becomes difficult to neglect our well-being and state of mind due to our extremely busy lives. Since people are finding themselves to be more lethargic than usual, the application can help suggest activities the user can perform to stay productive and elated. 
+During these trying times, often we neglect our well-being and state of mind due to the extremely busy lives. Since people are finding themselves to be more lethargic in their free time than usual, the application can help suggest activities the user can perform to stay productive and elated. 
 
 Through this, we can monitor mood swings and unexpected behavioural changes by maintaining a log of our emotions on a daily basis and judge the pattern that occurs over a particular time period. This would enable us to take appropriate actions to keep our moods elated at all times while making the most of the time at home and getting a break from the monotonous schedule.
 
