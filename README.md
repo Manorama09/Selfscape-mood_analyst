@@ -25,7 +25,7 @@
 
 ### Backend: 
 
-1. Technical Stack Used: Django, Heroku, Postgresql
+1. Technical Stack Used: 
 2. Editor Used: VS Code
 
 Link to backend repo: https://github.com/RiddhiGupta5/
