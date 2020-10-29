@@ -35,9 +35,9 @@ Link to backend repo: https://github.com/RiddhiGupta5/
 
 ### Deployment
 
-Database : Atlas MongoDB
-The Project is hosted using Netlify and is live at https://selfscape.netlify.app
-Backend Server is deployed using Heroku
+1. Database : Atlas MongoDB
+2. The Project is hosted using Netlify and is live at https://selfscape.netlify.app
+3. Backend Server is deployed using Heroku
 
 ## Contributors
 
