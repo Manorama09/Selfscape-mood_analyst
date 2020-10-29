@@ -21,6 +21,7 @@ Through this, we can monitor mood swings and unexpected behavioural changes by m
 ### Design:
 
 1. Figma
+2. Adobe Illustrator
 
 ### Frontend:
 
