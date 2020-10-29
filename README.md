@@ -1,5 +1,4 @@
 # Selfscape 
-
  
 
 ## Our Idea
@@ -16,6 +15,10 @@
 
 ## Project Creation
 
+### Design:
+
+1. Figma
+
 ### Frontend:
 
 1. Technical Stack Used: HTML, CSS, JAVASCRIPT
@@ -25,15 +28,15 @@
 
 ### Backend: 
 
-1. Technical Stack Used: 
+1. Technical Stack Used: NodeJS, MongoDB, ExpressJS, JWT
 2. Editor Used: VS Code
 
 Link to backend repo: https://github.com/RiddhiGupta5/
 
 ### Deployment
 
+Database : Atlas MongoDB
 The Project is hosted using Netlify and is live at https://selfscape.netlify.app
-
 Backend Server is deployed using Heroku
 
 ## Contributors
@@ -43,7 +46,6 @@ Backend Server is deployed using Heroku
 * [Manorama Maharana](http://github.com/Manorama09)
 
 ## Screenshot of the Home Page of the website
-
 
 <p align="center">
 	Made with :heart:
