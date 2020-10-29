@@ -50,7 +50,7 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 
 ## Screenshot of the Home Page of the website
 
-![Selfscape](https://github.com/[saloni0104]/[Selfscape-mood_analyst]/blob/[master]/images/Homepage.png?raw=true)
+![Selfscape](https://github.com/[saloni0104]/[Selfscape-mood_analyst]/[master]/images/Homepage.png?raw=true)
 
 <p align="center">
 	Made with :heart:
