@@ -45,6 +45,16 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 
 ## Contributors
 
+<table>
+  <tr>
+    <td align="center"><a href="http://github.com/saloni0104"><img src="https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Saloni.PNG?token=AL6DCECYSDUMA2QOYC4VAXS7UTN2I" width="200px;" alt=""/><br /><sub><b>Saloni Parekh</b></sub></a><br /><a href="#blogger" title="blogs">📖</a>
+   </td>
+    <td align="center"><a href="http://github.com/RiddhiGupta5"><img src="https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Riddhi.PNG?token=AL6DCEEDFGQJFNGCXF34MQC7UTN5I" width="200px;" alt=""/><br /><sub><b>Riddhi Gupta</b></sub></a><br /><a href="#tech-enthu" title="Code">💻</a>
+   </td>
+    <td align="center"><a href="http://github.com/Manorama09"><img src="https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Manorama.jpeg?token=AL6DCEB4RHDETBHIYBXDH627UTN36" width="200px;" alt=""/><br /><sub><b>Manorama Maharana</b></sub></a><br/><a href="#design" title="design">🎨</a>
+    </td>
+</tr>
+</table>
 * [Saloni Parekh](http://github.com/saloni0104)
 * [Riddhi Gupta](http://github.com/RiddhiGupta5)
 * [Manorama Maharana](http://github.com/Manorama09)
