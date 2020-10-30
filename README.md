@@ -8,7 +8,7 @@ During these trying times, often we neglect our well-being and state of mind due
 
 Through this, we can monitor mood swings and unexpected behavioural changes by maintaining a log of our emotions on a daily basis and judge the pattern that occurs over a particular time period. This would enable us to take appropriate actions to keep our moods elated at all times while making the most of the time at home and getting a break from the monotonous schedule.
 
-## How do we exactly work?
+## How does it exactly work?
 
 1. Create an account by signing up at Selfscape.
 2. Add your own interests, hobbies and routine commitments, category-wise under Leisure, Learning or Productivity.
