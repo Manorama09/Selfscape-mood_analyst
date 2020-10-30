@@ -10,10 +10,10 @@ Through this, we can monitor mood swings and unexpected behavioural changes by m
 
 ## How do we exactly work?
 
-1. Create an account by signing in.
+1. Create an account by signing up at Selfscape.
 2. Add your own interests, hobbies and routine commitments, category-wise under Leisure, Learning or Productivity.
 3. Maintain your diary logs and entries by entering your mood range (from 1-10) for that particular day and a brief description if you wish to.
-4. Our virtual assisstant chatbot can help you suggest activities and how to make your day more interesting and productive.
+4. Our virtual assistant can help you by suggesting activities and how to make your day more lively and productive.
 5. Keep a check on your day-to-day mood swings through a well-maintained and color co-ordinated graph analysis.
 
 ## Project Creation
@@ -28,7 +28,7 @@ Through this, we can monitor mood swings and unexpected behavioural changes by m
 1. Technical Stack Used: HTML, CSS, JAVASCRIPT
 2. Framework Used: Bootstrap
 3. Editor used: VS Code
-4. The Project can be run by opening the the index.html file leading to the home page
+4. The Project can be run by opening the the index.html file leading to the home page.
 
 ### Backend: 
 
@@ -40,8 +40,8 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 ### Deployment
 
 1. Database : Atlas MongoDB
-2. The Project is hosted using Netlify and is live at https://selfscape.netlify.app
-3. Backend Server is deployed using Heroku
+2. The Project is hosted using Netlify and is live at https://selfscape.netlify.app.
+3. Backend Server is deployed using Heroku.
 
 ## Contributors
 
@@ -51,7 +51,7 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 
 ## Screenshot of the Home Page of the website
 
-![Selfscape](https://github.com/[saloni0104]/[Selfscape-mood_analyst]/[master]/images/Homepage.png)
+![Selfscape]![alt text](https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Homepage.PNG?token=AL6DCECORVZY2BUDWB47H727UTMJ6)
 
 <p align="center">
 	Made with :heart:
