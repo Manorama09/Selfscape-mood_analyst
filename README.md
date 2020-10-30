@@ -1,5 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-
 # Selfscape ~ your perfect mood analyst
 
 A web application that can help you monitor and track your mood by providing you with insights on your behavioural patterns. The analysis will be through a color-coordinated graph, based on your interests and daily diary entries, along with an in-built activity suggester chatbot to guide you better as per your mood.
@@ -68,4 +66,3 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 <p align="center">
 	Made with :heart:
 </p>
-
