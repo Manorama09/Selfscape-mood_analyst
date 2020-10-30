@@ -43,6 +43,11 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 2. The Project is hosted using Netlify and is live at https://selfscape.netlify.app.
 3. Backend Server is deployed using Heroku.
 
+## Selfscape Home Page - Screenshot
+
+![Selfscape Home Page](https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Homepage.PNG?token=AL6DCECORVZY2BUDWB47H727UTMJ6)
+
+
 ## Contributors
 
 <table>
@@ -56,9 +61,6 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 </tr>
 </table>
 
-## Selfscape Home Page - Screenshot
-
-![Selfscape Home Page](https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Homepage.PNG?token=AL6DCECORVZY2BUDWB47H727UTMJ6)
 
 <p align="center">
 	Made with :heart:
