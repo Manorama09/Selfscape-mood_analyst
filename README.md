@@ -49,7 +49,7 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 * [Riddhi Gupta](http://github.com/RiddhiGupta5)
 * [Manorama Maharana](http://github.com/Manorama09)
 
-## Screenshot of the Home Page of the website
+## Selfscape Home Page - Screenshot
 
 ![Selfscape Home Page](https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Homepage.PNG?token=AL6DCECORVZY2BUDWB47H727UTMJ6)
 
