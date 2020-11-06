@@ -45,19 +45,19 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 
 ## Selfscape Home Page - Screenshot
 
-![Selfscape Home Page](https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Homepage.PNG?token=AL6DCECORVZY2BUDWB47H727UTMJ6)
+![Selfscape Home Page](https://github.com/saloni0104/Selfscape-mood_analyst/blob/master/images/Homepage.PNG?raw=true)
 
 
 ## Contributors
 
 <table>
   <tr>
-    <td align="center"><a href="http://github.com/saloni0104"><img src="https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Saloni.PNG?token=AL6DCECYSDUMA2QOYC4VAXS7UTN2I" width="200px;"  height="200px;" alt=""/><br /><sub><b>Saloni Parekh</b></sub></a><br /><a href="#blogger" title="blogs">📖</a>
+    <td align="center"><a href="http://github.com/saloni0104"><img src="https://github.com/saloni0104/Selfscape-mood_analyst/blob/master/images/Saloni.PNG?raw=true" width="200px;"  height="200px;" alt=""/><br /><sub><b>Saloni Parekh</b></sub></a><br /><a href="#blogger" title="blogs">📖</a>
    </td>
    </td>
-    <td align="center"><a href="http://github.com/RiddhiGupta5"><img src="https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Riddhi.PNG?token=AL6DCEEDFGQJFNGCXF34MQC7UTN5I" width="200px;" height="200px;" alt=""/><br /><sub><b>Riddhi Gupta</b></sub></a><br /><a href="#coder" title="tech-enthu">💻</a>
+    <td align="center"><a href="http://github.com/RiddhiGupta5"><img src="https://github.com/saloni0104/Selfscape-mood_analyst/blob/master/images/Riddhi.PNG?raw=true" width="200px;" height="200px;" alt=""/><br /><sub><b>Riddhi Gupta</b></sub></a><br /><a href="#coder" title="tech-enthu">💻</a>
    </td>
-    <td align="center"><a href="http://github.com/Manorama09"><img src="https://raw.githubusercontent.com/saloni0104/Selfscape-mood_analyst/master/images/Manorama.jpeg?token=AL6DCEB4RHDETBHIYBXDH627UTN36" width="200px;" height="200px;" alt=""/><br /><sub><b>Manorama Maharana</b></sub></a><br/><a href="#artist" title="art">🎨</a>
+    <td align="center"><a href="http://github.com/Manorama09"><img src="https://github.com/saloni0104/Selfscape-mood_analyst/blob/master/images/Manorama.jpeg?raw=true" width="200px;" height="200px;" alt=""/><br /><sub><b>Manorama Maharana</b></sub></a><br/><a href="#artist" title="art">🎨</a>
     </td>
 </tr>
 </table>
