@@ -41,7 +41,8 @@ Link to backend repo: https://github.com/RiddhiGupta5/selfscape-backend
 
 1. Database : Atlas MongoDB
 2. The Project is hosted using Netlify and is live at https://selfscape.netlify.app.
-3. Backend Server is deployed using Heroku.
+3. The domain was registered using domain.com and is live at http://www.selfscape.space/.
+4. Backend Server is deployed using Heroku.
 
 ## Selfscape Home Page - Screenshot
 
